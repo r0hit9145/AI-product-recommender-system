@@ -1,3 +1,16 @@
+AI Product Recommender System-
+
+Type what you're looking for (e.g. "a phone under $500") and an AI model
+recommends matching products from the catalog.
+
+How it works: React sends your request to a serverless API route, which asks
+an LLM to pick matching product IDs. Invalid IDs are discarded, and the React UI
+filters the product list to show only the recommendations. The API key stays on
+the server.
+
+Tech: React (Vite), Vercel serverless functions, Groq (OpenAI-compatible API)
+Live demo: https://product-recommender-rosy.vercel.app/
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
